@@ -1,4 +1,5 @@
 const express = require("express");
+const validateToken = require("../middleware/validateTokenHandler");
 const {
     getTasks,
     getTask,
@@ -9,6 +10,7 @@ const {
 
 const router = express.Router();
 
+router.use(validateToken);
 router.route("/").get(getTasks);
 router.route("/").post(createTask);
 router.route("/:id").get(getTask);

@@ -1,13 +1,13 @@
 const taskModel = require("../models/taskModel");
 
 //@desc Get task by task ID
-const getById = async (id) => {
-    return await taskModel.findById(id);
+const getById = async (id, userId) => {
+    return await taskModel.find({_id: id, user_id: userId});
 }
 
 //@desc Get list of tasks
-const getList = async () => {
-    return await taskModel.find();
+const getList = async (userId) => {
+    return await taskModel.find({user_id: userId});
 }
 
 //@desc create a task

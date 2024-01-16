@@ -2,8 +2,9 @@ const mongoose = require("mongoose");
 
 const taskSchema = mongoose.Schema({
     user_id: {
-        type: String,
-        required: [true, "Please enter user ID"]
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: "users"
     },
     task: {
         type: String,
