@@ -1,0 +1,20 @@
+{
+  "name": "@anhvdk/nodejs-task-mamanger-api-express",
+  "version": "1.0.0",
+  "description": "Task Manager API with express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "Daniel Vu",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.0.4"
+  }
+}
