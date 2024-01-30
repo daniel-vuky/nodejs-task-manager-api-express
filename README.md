@@ -30,7 +30,21 @@ npm install
 ```
 4. Config the .env
 5. Enjoy the APIs
+```
+Users routes:
+GET users/login
+POST users/register
+GET users/current
+```
 
+```
+Tasks routes
+GET tasks/ => get list task
+POST tasks => create task
+GET tasks/:id => get task by id
+PUT tasks/:id => update task
+DELETE tasks/:id => delete task
+```
    
 **Contributing**
 Feel free to fork and drop some feedback for me.
